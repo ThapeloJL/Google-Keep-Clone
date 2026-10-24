@@ -1,10 +1,10 @@
 import React from "react";
-import "./theme.css"
+import "./theme.css";
 
 //Cursor Feature : theme selector
 const ThemeSelector = ({ theme, onThemeChange }) => (
   <label className="theme-selector">
-    <span>Theme</span>
+    <span class="material-symbols-outlined">dark_mode</span>
     <select
       aria-label="Theme mode"
       value={theme}
