@@ -1,0 +1,179 @@
+/* ALL NOTES  */
+.notes {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding:0 50px ;
+}
+
+.note {
+  background-color: white;
+  margin: 10px;
+  width: 280px;
+  border: 1px solid #e0e1e0;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.note:hover{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+}
+.note .title {
+  width: 100%;
+  margin: 15px 0 0 15px ;
+}
+
+.note .text {
+  width: 100%;
+  margin: 10px 0 0 15px;
+}
+
+.note-reminder {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 10px 12px 0;
+  color: #5f6368;
+  font-size: 0.75rem;
+}
+
+.note-reminder .material-symbols-outlined {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.note-reminder button {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.reminder-input {
+  width: 24px;
+  height: 24px;
+  margin: 8px 0 0 6px;
+  opacity: 0.65;
+}
+
+.reminders-view {
+  margin: 32px 0 0 80px;
+}
+
+.reminders-view h2 {
+  margin: 0 0 24px 50px;
+  color: #5f6368;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reminders-view > p {
+  margin-left: 50px;
+  color: #5f6368;
+}
+
+.note .note-footer {
+  margin-top: 15px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.note-footer .material-symbols-outlined {
+  color: #5f6368;
+  font-size: .9rem;
+}
+
+.note .check-circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+
+}
+
+.app.theme-dark {
+  min-height: 100vh;
+  background: #202124;
+  color: #e8eaed;
+}
+
+.theme-dark nav {
+  border-color: #3c4043;
+  color: #e8eaed;
+}
+
+.theme-dark .search-area,
+.theme-dark .search-area input {
+  background: #303134;
+  color: #e8eaed;
+}
+
+.theme-dark .theme-selector,
+.theme-dark .reminders-view h2,
+.theme-dark .reminders-view > p,
+.theme-dark .note-reminder {
+  color: #bdc1c6;
+}
+
+.theme-dark .theme-selector select {
+  border-color: #5f6368;
+  color: #e8eaed;
+  background: #303134;
+}
+
+.theme-dark .note,
+.theme-dark .form-container,
+.theme-dark .sidebar-open {
+  border-color: #5f6368;
+  background: #202124;
+  color: #e8eaed;
+}
+
+.theme-dark .note .title,
+.theme-dark .note .text,
+.theme-dark .sidebar-item .sidebar-text {
+  color: #e8eaed;
+}
+
+.theme-dark .sidebar-item:hover,
+.theme-dark .hover:hover {
+  background: #3c4043;
+  color: #e8eaed;
+}
+
+.theme-dark .sidebar-active-item,
+.theme-dark .sidebar-active-item:hover,
+.theme-dark .active,
+.theme-dark .active:hover {
+  background: #41331c;
+  color: #fdd663;
+}
+
+.theme-dark .note-reminder button,
+.theme-dark .note-footer .material-symbols-outlined,
+.theme-dark .small-icon {
+  color: #bdc1c6;
+}
+
+.theme-dark .note-text,
+.theme-dark .note-title {
+  background: #202124;
+  color: #e8eaed;
+}
+
+@media (max-width: 600px) {
+  .theme-selector span {
+    display: none;
+  }
+
+  .reminders-view {
+    margin-left: 0;
+  }
+
+  .reminders-view h2,
+  .reminders-view > p {
+    margin-left: 24px;
+  }
+}
